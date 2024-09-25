@@ -1,0 +1,34 @@
+ID del error,Título,Pasos a seguir,Resultado esperado,Resultado actual,Severidad
+BR1,"Al seleccionar el campo ""Desde"" el cursor parpadea y el campo no se encuentra vacío","1. Abre la aplicación Urban Routes
+2. Haz clic en el campo ""Desde""","Se selecciona el campo ""Desde"". El cursor parpadea. El campo de búsqueda está vacío.","Se selecciona el campo ""Desde"". El cursor parpadea. El campo de búsqueda tiene una dirección de ejemplo",Menor
+BR2,"Al escribir ""Subway"" en el campo ""Hasta"" no se muestran listas de estaciones de metro","1. Abre la aplicación Urban Routes
+2. Haz clic en el campo ""Hasta""
+3. Escribe ""Subway"" (Metro)",Se muestra la lista de estaciones de metro.,"Al escribir ""Subway"" no se muestran listas de metro ni se genera ninguna acción",Crítico
+BR3,"Al escribir una dirección en el campo ""Desde"" el mapa no se enfoca en el pin de la dirección seleccionada ni la vista coincide con la descripción del diseño","""1. Abre la aplicación Urban Routes
+2. Haz clic en el campo ""Desde""
+3. Ingresa una dirección (ejemplo: East 2nd Street, 601).
+",El mapa se enfoca en el pin de la dirección seleccionada. La vista coincide con la descripción del diseño.,"Al ingresar la dirección en el campo ""Desde"" no se enfoca el pin en la dirección seleccionada ni la vista coincide con la descripción del diseño",Crítico
+BR4,"Al escribir una dirección en el campo ""Hasta"" el mapa no se enfoca en el pin de la dirección seleccionada ni la vista coincide con la descripción del diseño","""1. Abre la aplicación Urban Routes
+2. Haz clic en el campo ""Hasta""
+3. Ingresa una dirección (ejemplo: 1300 1st St).
+",El mapa se enfoca en el pin de la dirección seleccionada. La vista coincide con la descripción del diseño.,"Al ingresar la dirección en el campo ""Hasta"" no se enfoca el pin en la dirección seleccionada ni la vista coincide con la descripción del diseño",Crítico
+BR5,"Al hacer click en la X del campo ""Hasta"" la dirección se elimina pero el campo no queda vacío","1. Abre la aplicación Urban Routes
+2. Haz clic en el campo ""Hasta""
+3. Ingresa una dirección (ejemplo: 1300 1st St)
+4.Haz clic en la ""X"" del campo ""Hasta""",El campo está vacío. La dirección ingresada anteriormente se elimina del campo.,"Al hacer click en la X el campo ""Hasta"" se elimina la dirección ingresada, pero el campo sigue teniendo una dirección de ejemplo",Menor
+BR6,"Al hacer click en la X del campo ""Desde"" la dirección se elimina pero sigue reflejandose la dirección de ejemplo","1. Abre la aplicación Urban Routes
+2. Haz clic en el campo ""Desde""
+3. Ingresa una dirección (ejemplo: 1300 1st St)
+4.Haz clic en la ""X"" del campo ""Hasta""",El campo está vacío. La dirección ingresada anteriormente se elimina del campo.,"Al hacer click en la X el campo ""Desde"" se elimina la dirección ingresada, pero el campo sigue teniendo una dirección de ejemplo",Menor
+BR7,"Aunque al llevar a cabo todos los pasos se generan los resultados esperados, es necesario dividir el caso de prueba para cada uno de los resultados esperados","1. Abre la aplicación Urban Routes
+2. Desplázate por el mapa hasta el área del Dodger Stadium.
+3. Establece el nivel máximo de zoom.
+4. Haz clic en el ícono ""menos"" (-) en la esquina inferior derecha 5 veces.
+5. Arrastra el ícono del modo Street View y colócalo en cualquier calle.
+6.Desplázate sobre la imagen.","1. El área del Dodger Stadium está ampliada.
+2. El nivel de zoom está configurado al máximo.
+3. El nivel de zoom se reduce en 5 niveles.
+4. El modo Street View está activado.
+5. La imagen se desplaza 360 grados.","Se llevan a cabo los resultados esperados. Sin embargo, son muchos resultados esperados para un solo caso de prueba, por lo que es necesario dividirlos.",Menor
+BR8,Al hacer click en el logotipo de Urban Routes no aparece información sobre la aplicación,"1. Abre la aplicación Urban Routes
+2. Haz clic en el logotipo de Urban Routes",Se muestra la información sobre la aplicación.,Al hacer click en el logotipo de Urban Routes no aparece información de ningún tipo,Trivial
